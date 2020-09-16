@@ -1,59 +1,57 @@
-## Introduction
+Follow these instructions to host an image in Google Drive and get a link that you can use to include that image for download in programs, web pages, etc.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+--- task ---
 
-### What you will make
+Go to [drive.google.com](https://drive.google.com/) and drag an image from your computer to the drive. Wait for it to finish uploading.
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+--- /task ---
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+--- task ---
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+Once the image is in drive, right-click on it and choose 'Get shareable link'. 
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
+![The Google Drive 'Get link' dialogue.](images/get_shareable_link.png)
 
-+ A computer or tablet capable of running Scratch 3
+--- /task ---
 
-### Software
+--- task ---
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
+In the dialogue that opens, change who has permission to view the image from 'Restricted' to 'Anyone with the link'
 
-### Downloads
+![The Google Drive 'Get link' dialogue, with the permissions menu open.](images/link_permissions.png)
 
-+ Download the project [starter file](http://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
+--- /task ---
 
---- /collapse ---
+--- task ---
 
---- collapse ---
----
-title: What you will learn
----
+There should now be a link highlighted in the dialogue box.
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+![The Google Drive 'Get link' dialogue, showing that anyone with the link can access the file. The link to the file is highlighted.](images/link_updated.png)
 
---- /collapse ---
+In this link you can find the ID code for the file between `/d/` and `/view?usp=sharing`. It should look something like this:
 
---- collapse ---
----
-title: Additional information for educators
----
+```
+1xunlhWWxA6e59gSL_gTo_CiZYBNqbMDy
+```
 
-You can download the completed project [here](http://rpf.io/p/en/projectName-get){:target="_blank"}.
+Copy this ID.
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
+--- /task ---
 
---- /collapse ---
+--- task ---
+
+Use the ID you have just copied to complete this URL, inserting it in place of `[IMAGE ID]`:
+
+```
+https://drive.google.com/uc?export=download&[IMAGE ID]
+```
+
+You should get something like this:
+
+```
+https://drive.google.com/uc?export=download&1xunlhWWxA6e59gSL_gTo_CiZYBNqbMDy
+```
+
+This is the link you need to include in your code to allow the image to be downloaded.
+
+--- /task ---`
